@@ -2,5 +2,16 @@
 name = "dummedingser"
 version = "0.1.0"
 edition = "2021"
+build = "build.rs"
 
 [dependencies]
+axum = "0.8.2"
+tokio = { version = "1.36", features = ["full"] }
+tower-http = { version = "0.5", features = ["fs"] }
+askama = { version = "0.13.1"} 
+serde = { version = "1.0", features = ["derive"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+
+[build-dependencies]
+askama = "0.13.1"

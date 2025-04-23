@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block title %}Dummedingser - Kule Miniprosjekter{% endblock %}
+
+{% block content %}
+<header class="mb-16">
+    <nav class="flex justify-between items-center mb-8">
+        <h1 class="text-2xl font-bold">Dummedingser</h1>
+        <div class="space-x-4">
+            <a href="#projects" class="hover:text-primary">Prosjekter</a>
+            <a href="#about" class="hover:text-primary">Om Oss</a>
+            <a href="#contact" class="hover:text-primary">Kontakt</a>
+        </div>
+    </nav>
+    <div class="text-center">
+        <h2 class="text-4xl font-bold mb-4">Kule Miniprosjekter</h2>
+        <p class="text-xl text-gray-600">En samling av interessante og eksperimentelle prosjekter</p>
+    </div>
+</header>
+
+<main>
+    <section id="projects" class="mb-16">
+        <h2 class="text-3xl font-bold mb-8">Utvalgte Prosjekter</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Project cards will go here -->
+            <div class="card bg-base-200 shadow-xl">
+                <div class="card-body">
+                    <h3 class="card-title">Prosjektnavn</h3>
+                    <p>En kort beskrivelse av prosjektet og hva det gjør.</p>
+                    <div class="card-actions justify-end">
+                        <a href="#" class="btn btn-primary">Se Prosjekt</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="mb-16">
+        <h2 class="text-3xl font-bold mb-8">Om Oss</h2>
+        <div class="prose max-w-none">
+            <p>Velkommen til Dummedingser, et sted hvor vi viser frem interessante og eksperimentelle prosjekter. Hvert prosjekt er en unik utforskning av ideer og teknologier.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="mb-16">
+        <h2 class="text-3xl font-bold mb-8">Kontakt</h2>
+        <div class="flex space-x-4">
+            <a href="mailto:hello@example.com" class="btn btn-outline">E-post</a>
+            <a href="https://github.com" class="btn btn-outline">GitHub</a>
+            <a href="https://twitter.com" class="btn btn-outline">Twitter</a>
+        </div>
+    </section>
+</main>
+
+<footer class="text-center text-gray-600">
+    <p>© 2024 Dummedingser. Alle rettigheter reservert.</p>
+</footer>
+{% endblock %} 
